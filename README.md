@@ -47,3 +47,11 @@ End2End Challenge:
 5 min summerize flow
 10 min Test Plan
 xx min write End2End Test
+
+- mvn clean test -Dtest=End2EndRunner         #to start chrome via karate
+- no need for register and login test
+- first challenge
+-- Login
+-- place item in shopping cart 
+-- perform checkout process
+- 2nd challenge: Test sort functionality: ensure that items on the page https://www.saucedemo.com/inventory.html are sorted by Price (low to high)
