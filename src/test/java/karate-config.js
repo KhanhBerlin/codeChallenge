@@ -10,7 +10,7 @@ function fn() {
           '--remote-allow-origins=*',
           //'-kiosk',
           //'--windows-size=1024,768',
-          '--headless=new',
+          //'--headless=new',
     ]
 
   var config = {

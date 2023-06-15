@@ -1,5 +1,17 @@
 {
   "userNameInput": "#user-name",
   "passwordInput": "#password",
-  "submitButton": "#login-button"
+  "submitButton": "#login-button",
+  "inventoryItems": "#inventory_container",
+  "backpackItem": "#item_4_title_link",
+  "backpackItemDetail": ".inventory_item_container",
+  "backpackAddToCart": "#add-to-cart-sauce-labs-backpack",
+  "shoppingCartIcon": "a.shopping_cart_link",
+  "shoppingCartContainer": "#cart_contents_container",
+  "checkoutButton": "#checkout",
+  "checkoutFirstName": "#first-name",
+  "checkoutLastName": "#last-name",
+  "checkoutZipCode": "#postal-code",
+  "checkoutContinue": "#continue",
+  "checkoutFinish": "#finish"
 }
