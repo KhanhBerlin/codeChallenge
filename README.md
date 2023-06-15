@@ -21,19 +21,23 @@ To help you get started, we have a Playwright boilerplate repository that you ca
  
 Share your solutions as links to public repositories. Do not invest more than around 2 hours on the assignment. It is okay if you are unable to complete all tasks within this time.
  
-Please reach out to us if you have any questions. 
-
+Please reach out to us if you have any questions.
 
 #####
-API Challenge:
-10 min reading
-5 min Manual click flow
-5 min summerize flow
-10 min Test Plan
-xx min write API Test
-
-
-
+- API Challenge:
+-- 10 min reading
+-- 5 min Manual click flow
+-- 5 min summerize flow
+-- 10 min Test Plan
+-- xx min write API Test
+- no register and login the users needed
+- goto straight to /users endpoint
+-- Test for no Value #no needed, no values means default get...
+-- NaN or Null #return on default get as default value
+-- Numeric instead String, seems no 400....
+-- 0 or -minus Integer
+-- Integer bigger than Saved
+- mvn clean install -DskipTests=true #install maven artefacts
 
 
 #####
