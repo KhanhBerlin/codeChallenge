@@ -8,16 +8,16 @@ for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
   * driver 'https://www.saucedemo.com/'
   * waitUntil("document.readyState == 'complete'")
   * driver fullscreen()
-
- Scenario: login successful
   * def webElement = read('webElements.json')
-  * def backpackPrice = '29.99'
-  * def orderSuccessMsg = 'Thank you for your order!'
   * waitFor(webElement.userNameInput)
   * click(webElement.userNameInput).input('standard_user')
   * click(webElement.passwordInput).input('secret_sauce')
   * click(webElement.submitButton)
   * waitFor(webElement.inventoryItems)
+
+ Scenario: purchase 1 item successful
+  * def backpackPrice = '29.99'
+  * def orderSuccessMsg = 'Thank you for your order!'
   * click(webElement.backpackItem)
   * sleep(500)
   * waitFor(webElement.backpackItemDetail)
@@ -40,3 +40,12 @@ for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
   * click(webElement.checkoutContinue)
   * waitForText('body', backpackPrice)
   * click(webElement.checkoutFinish)
+  * waitForText('body', orderSuccessMsg)
+
+ Scenario: low price to high price
+  * def backpackPrice = '29.99'
+  * def orderSuccessMsg = 'Thank you for your order!'
+  * mouse(webElement.selectTab).click()
+  * sleep(500)
+  * mouse(webElement.selectTabLo2Hi).click()
+  * sleep(5000)

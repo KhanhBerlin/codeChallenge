@@ -13,5 +13,7 @@
   "checkoutLastName": "#last-name",
   "checkoutZipCode": "#postal-code",
   "checkoutContinue": "#continue",
-  "checkoutFinish": "#finish"
+  "checkoutFinish": "#finish",
+  "selectTab": "select.product_sort_container",
+  "selectTabLo2Hi": "option[value=lohi]"
 }
